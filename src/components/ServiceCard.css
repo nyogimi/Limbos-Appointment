@@ -1,0 +1,219 @@
+.card-heading,
+.heading1,
+.paragraph {
+  position: absolute;
+  display: inline-block;
+}
+.heading1 {
+  top: 34px;
+  left: calc(50% - 350px);
+  font-size: var(--font-size-21xl);
+  line-height: 46px;
+  font-weight: 500;
+  font-family: var(--font-outfit);
+  background: linear-gradient(270deg, #007e85, #007e85 42.14%, #007e85);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  width: 621px;
+}
+.card-heading,
+.paragraph {
+  top: 268px;
+  left: 25.8px;
+  line-height: 34px;
+  width: 348.1px;
+}
+.paragraph {
+  top: 356px;
+  font-size: var(--body-default-size);
+  line-height: 30px;
+  color: var(--color-dimgray-100);
+  width: 365.9px;
+}
+.container-icon {
+  position: absolute;
+  height: 39.96%;
+  width: 94.46%;
+  top: 3%;
+  right: 1.73%;
+  bottom: 57.04%;
+  left: 3.8%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.card {
+  position: absolute;
+  top: 145px;
+  left: 37px;
+  border-radius: var(--br-5xl);
+  background-color: var(--light-background-color);
+  width: 420.9px;
+  height: 506px;
+}
+.paragraph1 {
+  position: absolute;
+  top: 314px;
+  left: 25.8px;
+  font-size: var(--body-default-size);
+  line-height: 30px;
+  color: var(--color-dimgray-100);
+  display: inline-block;
+  width: 365.9px;
+}
+.image-placeholder-icon {
+  position: absolute;
+  height: 39.96%;
+  width: 94.46%;
+  top: 4.23%;
+  right: 2.68%;
+  bottom: 55.81%;
+  left: 2.85%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.card1 {
+  position: absolute;
+  top: 716px;
+  left: 37px;
+  border-radius: var(--br-5xl);
+  background-color: var(--light-background-color);
+  width: 420.9px;
+  height: 506px;
+}
+.container-icon1 {
+  position: absolute;
+  height: 39.96%;
+  width: 94.46%;
+  top: 3.56%;
+  right: 2.92%;
+  bottom: 56.48%;
+  left: 2.61%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.card2 {
+  position: absolute;
+  top: 716px;
+  left: 530px;
+  border-radius: var(--br-5xl);
+  background-color: var(--light-background-color);
+  width: 420.9px;
+  height: 506px;
+}
+.container-icon2,
+.link {
+  position: absolute;
+  top: 436px;
+  left: 25.8px;
+}
+.container-icon2 {
+  height: 39.96%;
+  width: 94.46%;
+  top: 4.15%;
+  right: 2.9%;
+  bottom: 55.89%;
+  left: 2.64%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.card3 {
+  position: absolute;
+  top: 716px;
+  left: 1025px;
+  border-radius: var(--br-5xl);
+  background-color: var(--light-background-color);
+  width: 420.9px;
+  height: 506px;
+}
+.paragraph4 {
+  position: absolute;
+  top: 348px;
+  left: 30px;
+  font-size: var(--body-default-size);
+  line-height: 30px;
+  color: var(--color-dimgray-100);
+  display: inline-block;
+  width: 365.9px;
+}
+.container-icon3 {
+  position: absolute;
+  height: 39.96%;
+  width: 94.46%;
+  top: 3.99%;
+  right: 2.92%;
+  bottom: 56.05%;
+  left: 2.61%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.card4 {
+  position: absolute;
+  top: 145px;
+  left: calc(50% - 240px);
+  border-radius: var(--br-5xl);
+  background-color: var(--light-background-color);
+  width: 420.9px;
+  height: 506px;
+}
+.paragraph5 {
+  position: absolute;
+  top: 342px;
+  left: 25.6px;
+  font-size: var(--body-default-size);
+  line-height: 30px;
+  color: var(--color-dimgray-100);
+  display: inline-block;
+  width: 365.9px;
+}
+.container-icon4 {
+  height: 39.96%;
+  width: 94.46%;
+  top: 4.98%;
+  right: 2.92%;
+  bottom: 55.06%;
+  left: 2.61%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.card5,
+.container-icon4,
+.wrapper {
+  position: absolute;
+}
+.card5 {
+  top: 145px;
+  left: 1025px;
+  border-radius: var(--br-5xl);
+  background-color: var(--light-background-color);
+  width: 420.9px;
+  height: 506px;
+}
+.wrapper {
+  top: 0;
+  left: 0;
+  background-color: var(--light-gray-2);
+  width: 1540px;
+  height: 1293px;
+  text-align: center;
+  font-size: var(--h3-size);
+  color: var(--color-teal);
+  font-family: var(--body-default);
+}

@@ -1,0 +1,128 @@
+.dropdown2,
+.form-control2 {
+  position: absolute;
+  letter-spacing: 0.2px;
+}
+.form-control2 {
+  top: 0;
+  left: 0;
+  line-height: 24px;
+  font-weight: 600;
+}
+.dropdown2 {
+  top: calc(50% - 14px);
+  left: 18px;
+  line-height: 28px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #d9d9d9;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.vector-icon3 {
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 29px;
+  width: 14px;
+  height: 8px;
+}
+.div35,
+.list-entry10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.div35 {
+  width: 100%;
+  right: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-whitesmoke-100);
+  border: 1px solid var(--color-gainsboro-200);
+  box-sizing: border-box;
+  height: 50px;
+  overflow: hidden;
+  font-size: var(--btn-text-size);
+  font-family: var(--btn-text);
+}
+.list-entry10 {
+  letter-spacing: 0.1px;
+  line-height: 16px;
+}
+.div36 {
+  position: absolute;
+  top: 79px;
+  left: 25px;
+  width: 89px;
+  height: 16px;
+  overflow: hidden;
+}
+.list-entry11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 0.1px;
+  line-height: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #d9d9d9;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.div37,
+.div38,
+.div39,
+.div40,
+.select2 {
+  position: absolute;
+  top: 119px;
+  left: 25px;
+  width: 89px;
+  height: 16px;
+  overflow: hidden;
+}
+.div38,
+.div39,
+.div40,
+.select2 {
+  top: 159px;
+}
+.div39,
+.div40,
+.select2 {
+  top: 199px;
+}
+.div40,
+.select2 {
+  top: 239px;
+}
+.select2 {
+  width: 100%;
+  top: 34px;
+  right: 0;
+  left: 0;
+  height: 50px;
+  font-size: var(--font-size-mini);
+  color: var(--second-text-color);
+  font-family: var(--font-roboto);
+}
+.form-group-custom-select2 {
+  position: relative;
+  width: 248px;
+  height: 84px;
+  text-align: left;
+  font-size: var(--btn-text-size);
+  color: var(--text-color);
+  font-family: var(--btn-text);
+}

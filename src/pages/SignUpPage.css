@@ -1,0 +1,49 @@
+.ellipse-icon4 {
+  position: absolute;
+  top: 175.3px;
+  left: 859.4px;
+  border-radius: var(--br-3981xl);
+  width: 1294.4px;
+  height: 1235.8px;
+}
+.ellipse-icon5 {
+  position: relative;
+  border-radius: var(--br-3981xl);
+  width: 1358.5px;
+  height: 1164.2px;
+}
+.ellipse-wrapper2 {
+  position: absolute;
+  top: 143.2px;
+  left: -672px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+  transform: rotate(-19.28deg);
+  transform-origin: 0 0;
+}
+.h31 {
+  position: absolute;
+  top: 269px;
+  left: 71px;
+  letter-spacing: 0.2px;
+  line-height: 80px;
+  font-weight: 800;
+  display: inline-block;
+  width: 425px;
+  height: 623px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sign-up-page {
+  position: relative;
+  background-color: var(--color-powderblue);
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--h1-size);
+  color: var(--light-background-color);
+  font-family: var(--btn-text);
+}

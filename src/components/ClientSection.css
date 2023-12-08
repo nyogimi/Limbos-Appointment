@@ -1,0 +1,11 @@
+.meet-our-clients-card {
+  position: absolute;
+  top: 2373px;
+  left: 0;
+  width: 1440px;
+  height: 869px;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-teal);
+  font-family: var(--font-outfit);
+}

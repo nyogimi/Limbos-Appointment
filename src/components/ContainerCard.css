@@ -1,0 +1,86 @@
+.limbos-dental-cosmetics1 {
+  position: relative;
+  line-height: 30px;
+  font-weight: 600;
+}
+.limbos-dental-cosmetics-and-im-container {
+  position: absolute;
+  top: 49px;
+  left: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+}
+.div34,
+.hotline1,
+.maginhawa-street-teachers1,
+.main-clinic1,
+.we-are-commited1 {
+  position: absolute;
+  top: 129px;
+  left: 25px;
+  line-height: 28px;
+  display: inline-block;
+  width: 639px;
+}
+.div34,
+.hotline1,
+.maginhawa-street-teachers1,
+.main-clinic1 {
+  top: 51px;
+  left: 801px;
+  font-weight: 600;
+}
+.div34,
+.hotline1,
+.maginhawa-street-teachers1 {
+  top: 208px;
+  width: 565px;
+}
+.div34,
+.maginhawa-street-teachers1 {
+  top: 87px;
+  font-size: var(--h5-size);
+  font-weight: 500;
+  width: 580px;
+}
+.div34 {
+  top: 241px;
+  text-decoration: underline;
+  width: 639px;
+}
+.footer-home-page-child {
+  position: absolute;
+  top: 325px;
+  left: calc(50% - 740px);
+  width: 100%;
+  height: 1px;
+}
+.all-rights-reserved1 {
+  position: absolute;
+  top: 354px;
+  left: 621px;
+  font-size: var(--font-size-mini);
+  line-height: 22px;
+  font-family: var(--font-poppins);
+  text-align: right;
+  display: inline-block;
+  width: 199px;
+  height: 22px;
+}
+.footer-home-page {
+  position: absolute;
+  top: 4317px;
+  left: 0;
+  background-color: var(--light-gray-2);
+  width: 100%;
+  height: 398px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--h3-size);
+  color: var(--color-black);
+  font-family: var(--font-outfit);
+}

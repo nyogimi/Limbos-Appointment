@@ -1,0 +1,11 @@
+.services-card {
+  position: absolute;
+  top: 905px;
+  left: 0;
+  width: 1440px;
+  height: 1293px;
+  text-align: left;
+  font-size: var(--h3-size);
+  color: var(--color-teal);
+  font-family: var(--body-default);
+}

@@ -1,0 +1,117 @@
+.n-removebg-preview-2-icon1 {
+  position: absolute;
+  top: 14px;
+  left: 93px;
+  width: 89px;
+  height: 87px;
+  object-fit: cover;
+}
+.services,
+.contact1,
+.log-in-container,
+.sign-up1 {
+  position: relative;
+  letter-spacing: -0.14em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.contact1 {
+  color: var(--color-darkturquoise-200);
+}
+.home-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xl);
+}
+.frame-inner1,
+.frame8 {
+  position: absolute;
+  left: 0;
+}
+.frame-inner1 {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame8 {
+  top: 13px;
+  width: 468px;
+  height: 28.5px;
+  overflow: hidden;
+}
+.log-in1 {
+  position: relative;
+  letter-spacing: -0.14em;
+  text-transform: capitalize;
+}
+.log-in-container,
+.sign-up1 {
+  position: absolute;
+  cursor: pointer;
+}
+.log-in-container {
+  top: 0;
+  left: 861px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-darkturquoise-200);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) var(--padding-21xl);
+  color: var(--light-background-color);
+}
+.sign-up1 {
+  top: 13.5px;
+  left: 690px;
+  letter-spacing: -0.14em;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--color-darkturquoise-200);
+  backdrop-filter: blur(4px);
+}
+.frame7 {
+  position: absolute;
+  top: 30.5px;
+  left: 329px;
+  width: 1028px;
+  height: 51px;
+  overflow: hidden;
+}
+.top-bar-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--light-background-color);
+  width: 1480px;
+  height: 115px;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-lexend-tera);
+}
+.services:hover,
+.contact1:hover,
+.log-in-container:hover,
+.sign-up1:hover,
+.contact1:hover {
+  color: var(--color-darkturquoise-200);
+  transition: color 0.3s ease; /* Add a transition for a smoother effect */
+}
+.contact1.active,
+.sign-up1.active,
+.services.active,
+.aboutUs.active {
+  color: var(--color-darkturquoise-200);
+}
+.aboutUs {
+  color: var(--color-darkturquoise-200);
+}
+
+
+
+

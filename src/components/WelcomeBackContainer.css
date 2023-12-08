@@ -1,0 +1,114 @@
+.n-removebg-preview-1-icon2 {
+  position: absolute;
+  top: 27px;
+  left: 94px;
+  width: 174px;
+  height: 171px;
+  object-fit: cover;
+}
+.h33 {
+  position: absolute;
+  top: 217px;
+  left: 82px;
+  font-size: var(--h3-size);
+  letter-spacing: 0.1px;
+  line-height: 32px;
+}
+.email-letter3,
+.h34,
+.password-letter7 {
+  position: absolute;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.h34 {
+  top: 600px;
+  left: 133px;
+  cursor: pointer;
+}
+.email-letter3,
+.password-letter7 {
+  top: 298px;
+  left: 58px;
+  color: var(--secondary-color-2);
+  text-align: left;
+}
+.password-letter7 {
+  top: 389px;
+}
+.btn-text4 {
+  position: relative;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+}
+.buttonbtnprimary-color4 {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-darkturquoise-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 242px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-21xl);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.login-button2 {
+  position: absolute;
+  top: 490px;
+  left: 57px;
+  width: 248px;
+  height: 84px;
+  font-size: var(--h5-size);
+  color: var(--light-gray-2);
+}
+.email-input-form10 {
+  height: calc(100% - 610px);
+  width: calc(100% - 118px);
+  top: 322px;
+  right: 60px;
+  bottom: 288px;
+  left: 58px;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-whitesmoke-100);
+  border: 1px solid var(--color-gainsboro-100);
+}
+.email-input-form10,
+.email-input-form11,
+.light-theme2 {
+  position: absolute;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.email-input-form11 {
+  height: calc(100% - 610px);
+  width: calc(100% - 118px);
+  top: 413px;
+  right: 62px;
+  bottom: 197px;
+  left: 56px;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-whitesmoke-100);
+  border: 1px solid var(--color-gainsboro-100);
+}
+.light-theme2 {
+  top: 120px;
+  left: 539px;
+  border-radius: var(--br-11xl);
+  background: linear-gradient(167.95deg, #fbfbfb, rgba(251, 251, 251, 0.2));
+  box-shadow: 7px 7px 20px rgba(255, 255, 255, 0.25) inset;
+  backdrop-filter: blur(50px);
+  border: 1px solid var(--light-background-color);
+  width: 361px;
+  height: 660px;
+  text-align: center;
+  font-size: var(--btn-text-size);
+  color: var(--color-darkturquoise-200);
+  font-family: var(--btn-text);
+}
