@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 import "./AdminLoginFormContainer.css";
 
 const AdminLoginFormContainer = () => {
-  const navigate = useNavigate();
+ const navigate = useNavigate();
 
-  const onButtonbtnprimaryColorContainerClick = useCallback(() => {
+ const onButtonbtnprimaryColorContainerClick = useCallback(() => {
     navigate("/dashboard-doctor");
-  }, [navigate]);
+ }, [navigate]);
 
-  return (
+ return (
     <div className="light-theme1">
       <img
         className="n-removebg-preview-1-icon1"
@@ -27,10 +27,10 @@ const AdminLoginFormContainer = () => {
           <b className="btn-text3">Login</b>
         </div>
       </div>
-      <div className="email-input-form8" />
-      <div className="email-input-form9" />
+      <input className="email-input-form8" type="password" placeholder="Enter password" />
+      <input className="email-input-form9" type="text" placeholder="Enter email" />
     </div>
-  );
+ );
 };
 
 export default AdminLoginFormContainer;

@@ -14,6 +14,7 @@
   letter-spacing: -0.14em;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
 }
 .contact1 {
   color: var(--color-darkturquoise-200);
@@ -29,6 +30,7 @@
 .frame8 {
   position: absolute;
   left: 0;
+  display: flex;
 }
 .frame-inner1 {
   top: 0;
@@ -42,16 +44,19 @@
   width: 468px;
   height: 28.5px;
   overflow: hidden;
+  display: flex;
 }
 .log-in1 {
   position: relative;
   letter-spacing: -0.14em;
   text-transform: capitalize;
+  display: flex;
 }
 .log-in-container,
 .sign-up1 {
   position: absolute;
   cursor: pointer;
+  display: flex;
 }
 .log-in-container {
   top: 0;
@@ -73,6 +78,7 @@
   font-weight: 500;
   color: var(--color-darkturquoise-200);
   backdrop-filter: blur(4px);
+  display: flex;
 }
 .frame7 {
   position: absolute;
@@ -81,19 +87,25 @@
   width: 1028px;
   height: 51px;
   overflow: hidden;
+  display: flex;
 }
 .top-bar-2 {
   position: fixed;
   top: 0;
   left: 0;
   background-color: var(--light-background-color);
-  width: 1480px;
+  width: 100%; /* Adjusted width to 100% */
+  max-width: 2550px; /* Added max-width to limit the width */
   height: 115px;
   text-align: center;
   font-size: var(--font-size-xl);
   color: var(--color-black);
   font-family: var(--font-lexend-tera);
-}
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
 .services:hover,
 .contact1:hover,
 .log-in-container:hover,

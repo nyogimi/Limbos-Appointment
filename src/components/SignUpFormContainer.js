@@ -2,6 +2,7 @@ import React, { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SignUpFormContainer.css";
 
+
 const SignUpFormContainer = () => {
   const navigate = useNavigate();
   const [firstName, setFirstName] = useState("");

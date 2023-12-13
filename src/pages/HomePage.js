@@ -1,5 +1,7 @@
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import ServiceSection from "../components/ServiceSection";
 import ContainerCard from "../components/ContainerCard";
 import ClientSection from "../components/ClientSection";
@@ -9,6 +11,7 @@ import "./HomePage.css";
 
 const HomePage = () => {
   const navigate = useNavigate();
+  const [selectedDate, setSelectedDate] = React.useState(null);
 
   const onServicesTextClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='headingText']");
@@ -37,8 +40,41 @@ const HomePage = () => {
   }, [navigate]);
 
   const onBtnTextClick = useCallback(() => {
+    console.log("Selected Date:", selectedDate); // Use the selected date as needed
     navigate("/summary-page");
-  }, [navigate]);
+  }, [selectedDate, navigate]);
+
+  const locations = [
+    "Quezon City Clinic", 
+    "Manila Clinic", 
+    "St. Lukes Medical Center"
+  ];
+  const services = [
+    "TMJ (Temporomandibular Joint) Orthodontics",
+    "Functional Jaw Orthopedics",
+    "Prosthodontics",
+    "Dental Cosmetics",
+    "Dental Surgery",
+    "Implant Dentistry",
+  ];
+
+  // Generate time options with a 1-hour interval from 2:00 PM to 9:00 PM
+  const generateTimeOptions = () => {
+    const startHour = 14; // 2:00 PM
+    const endHour = 21; // 9:00 PM
+    const timeOptions = [];
+
+    for (let hour = startHour; hour <= endHour; hour++) {
+      const formattedHour = hour % 12 || 12; // Convert 24-hour format to 12-hour format
+      const amPm = hour < 12 ? 'AM' : 'PM';
+      const timeString = `${formattedHour}:00 ${amPm}`;
+      timeOptions.push(timeString);
+    }
+
+    return timeOptions;
+  };
+
+  const times = generateTimeOptions();
 
   return (
     <div className="home-page">
@@ -66,70 +102,24 @@ const HomePage = () => {
               <div className="card-item">
                 <b className="h3">Book Appointment</b>
                 <div className="card-content">
-                  <FormContainer
-                    inputLabel="Location *"
-                    showDiv
-                    divVisible
-                    divVisible1
-                    divVisible2
-                    divVisible3
-                  />
-                  <FormContainer
-                    inputLabel="Service *"
-                    showDiv={false}
-                    divVisible={false}
-                    divVisible1={false}
-                    divVisible2={false}
-                    divVisible3={false}
-                  />
-                  <div className="form-group-custom-select">
-                    <div className="form-control">Date *</div>
-                    <div className="select">
-                      <div className="option">
-                        <img className="vector-icon" alt="" src="/vector.svg" />
-                        <div className="dropdown">Please Select</div>
-                      </div>
-                      <div className="option1">
-                        <div className="list-entry">List Entry # 1</div>
-                      </div>
-                      <div className="option2">
-                        <div className="list-entry1">List Entry # 2</div>
-                      </div>
-                      <div className="option3">
-                        <div className="list-entry">List Entry # 3</div>
-                      </div>
-                      <div className="option4">
-                        <div className="list-entry">List Entry # 4</div>
-                      </div>
-                      <div className="option5">
-                        <div className="list-entry">List Entry # 5</div>
-                      </div>
-                    </div>
+                  <FormContainer inputLabel="Location" options={locations} />
+                  <FormContainer inputLabel="Service" options={services} />
+                  <div className="form-container">
+                    <label className="form-label">Date</label>
+                    <DatePicker
+                      selected={selectedDate}
+                      onChange={(date) => setSelectedDate(date)}
+                      dateFormat="MMMM d, yyyy"
+                      isClearable
+                      placeholderText="Select a date"
+                    />
+                    {selectedDate && (
+                      <p className="selected-date">
+                        Selected Date: {selectedDate.toLocaleDateString()}
+                      </p>
+                    )}
                   </div>
-                  <div className="form-group-custom-select1">
-                    <div className="select1">
-                      <div className="option">
-                        <img className="vector-icon" alt="" src="/vector.svg" />
-                        <div className="dropdown1">Please Select</div>
-                      </div>
-                      <div className="option1">
-                        <div className="list-entry">List Entry # 1</div>
-                      </div>
-                      <div className="option2">
-                        <div className="list-entry1">List Entry # 2</div>
-                      </div>
-                      <div className="option3">
-                        <div className="list-entry">List Entry # 3</div>
-                      </div>
-                      <div className="option4">
-                        <div className="list-entry">List Entry # 4</div>
-                      </div>
-                      <div className="option5">
-                        <div className="list-entry">List Entry # 5</div>
-                      </div>
-                    </div>
-                    <div className="form-control1"> Time *</div>
-                  </div>
+                  <FormContainer inputLabel="Time" options={times} />
                 </div>
                 <div className="buttonbtnprimary-color">
                   <b className="btn-text" onClick={onBtnTextClick}>

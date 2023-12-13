@@ -91,7 +91,7 @@
   top: 0;
   left: 0;
   background-color: var(--light-background-color);
-  width: 1440px;
+  width: 1540px;
   height: 115px;
 }
 .n-removebg-preview-2-icon {
@@ -133,10 +133,10 @@
   color: var(--light-background-color);
 }
 .top-bar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 1439px;
+  width: 1450px;
   height: 115px;
   font-size: var(--font-size-xl);
   color: var(--color-darkturquoise-200);

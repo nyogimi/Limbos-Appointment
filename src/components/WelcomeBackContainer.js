@@ -32,6 +32,7 @@ const WelcomeBackContainer = () => {
         type="text"
         className="email-input-form10"
         value={email}
+        placeholder="Enter Email"
         onChange={(e) => setEmail(e.target.value)}
       />
       <div className="password-letter7">Password</div>
@@ -39,6 +40,7 @@ const WelcomeBackContainer = () => {
         type="password"
         className="email-input-form11"
         value={password}
+        placeholder="Enter Password"
         onChange={(e) => setPassword(e.target.value)}
       />
       <div className="login-button2">

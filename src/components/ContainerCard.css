@@ -58,6 +58,7 @@
   left: calc(50% - 740px);
   width: 100%;
   height: 1px;
+  display: flex;
 }
 .all-rights-reserved1 {
   position: absolute;
@@ -83,4 +84,5 @@
   font-size: var(--h3-size);
   color: var(--color-black);
   font-family: var(--font-outfit);
+  display: flex;
 }
