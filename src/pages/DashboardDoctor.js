@@ -1,15 +1,30 @@
-import { useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Property1DayIndonesian from "../components/Property1DayIndonesian";
-import VariantOn from "../components/VariantOn";
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
 import "./DashboardDoctor.css";
 
 const DashboardDoctor = () => {
   const navigate = useNavigate();
 
+  const [selectedDate, setSelectedDate] = useState(new Date());
+
+  const [today, setToday] = useState("");
+
   const onSideBarClick = useCallback(() => {
     navigate("/login-page");
   }, [navigate]);
+
+  useEffect(() => {
+    const todayFormatted = new Intl.DateTimeFormat("en-US", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    }).format(new Date());
+
+    setToday(todayFormatted);
+  }, []);
 
   return (
     <div className="dashboard-doctor">
@@ -138,255 +153,18 @@ const DashboardDoctor = () => {
                 </div>
               </div>
             </div>
+   
             <div className="calendar">
-              <div className="calendar-child" />
-              <div className="december-2023-parent">
-                <div className="december-2023">December 2023</div>
-                <div className="icons-parent">
-                  <img className="icons" alt="" src="/icons.svg" />
-                  <img className="icons" alt="" src="/icons1.svg" />
-                </div>
-                <div className="line-div" />
-                <Property1DayIndonesian
-                  sen="Sun"
-                  property1DayIndonesianWidth="45.1px"
-                  property1DayIndonesianPosition="absolute"
-                  property1DayIndonesianTop="103.8px"
-                  property1DayIndonesianLeft="4.8px"
-                  property1DayIndonesianHeight="25.1px"
-                  senFontWeight="unset"
-                  senFontFamily="Poppins"
-                  senColor="#2b2b36"
-                />
-                <Property1DayIndonesian
-                  sen="Mon"
-                  property1DayIndonesianWidth="45.1px"
-                  property1DayIndonesianPosition="absolute"
-                  property1DayIndonesianTop="103.8px"
-                  property1DayIndonesianLeft="58.3px"
-                  property1DayIndonesianHeight="25.1px"
-                  senFontWeight="unset"
-                  senFontFamily="Poppins"
-                  senColor="#2b2b36"
-                />
-                <Property1DayIndonesian
-                  sen="Tue"
-                  property1DayIndonesianWidth="45.1px"
-                  property1DayIndonesianPosition="absolute"
-                  property1DayIndonesianTop="103.8px"
-                  property1DayIndonesianLeft="111.9px"
-                  property1DayIndonesianHeight="25.1px"
-                  senFontWeight="unset"
-                  senFontFamily="Poppins"
-                  senColor="#2b2b36"
-                />
-                <Property1DayIndonesian
-                  sen="Wed"
-                  property1DayIndonesianWidth="45.1px"
-                  property1DayIndonesianPosition="absolute"
-                  property1DayIndonesianTop="103.8px"
-                  property1DayIndonesianLeft="165.4px"
-                  property1DayIndonesianHeight="25.1px"
-                  senFontWeight="unset"
-                  senFontFamily="Poppins"
-                  senColor="#2b2b36"
-                />
-                <Property1DayIndonesian
-                  sen="Thu"
-                  property1DayIndonesianWidth="45.1px"
-                  property1DayIndonesianPosition="absolute"
-                  property1DayIndonesianTop="103.8px"
-                  property1DayIndonesianLeft="218.9px"
-                  property1DayIndonesianHeight="25.1px"
-                  senFontWeight="unset"
-                  senFontFamily="Poppins"
-                  senColor="#2b2b36"
-                />
-                <Property1DayIndonesian
-                  sen="FrI"
-                  property1DayIndonesianWidth="45.1px"
-                  property1DayIndonesianPosition="absolute"
-                  property1DayIndonesianTop="103.8px"
-                  property1DayIndonesianLeft="272.4px"
-                  property1DayIndonesianHeight="25.1px"
-                  senFontWeight="unset"
-                  senFontFamily="Poppins"
-                  senColor="#2b2b36"
-                />
-                <Property1DayIndonesian
-                  sen="SAT"
-                  property1DayIndonesianWidth="45.1px"
-                  property1DayIndonesianPosition="absolute"
-                  property1DayIndonesianTop="103.8px"
-                  property1DayIndonesianLeft="326px"
-                  property1DayIndonesianHeight="25.1px"
-                  senFontWeight="unset"
-                  senFontFamily="Poppins"
-                  senColor="#2b2b36"
-                />
-                <VariantOn
-                  prop="4"
-                  variantOnWidth="33.8px"
-                  variantOnPosition="absolute"
-                  variantOnTop="143.1px"
-                  variantOnLeft="4.8px"
-                  variantOnOpacity="0"
-                  divHeight="108.4%"
-                  divWidth="111.24%"
-                  divColor="#2b2b36"
-                />
-                <VariantOn
-                  prop="5"
-                  variantOnWidth="33.8px"
-                  variantOnPosition="absolute"
-                  variantOnTop="143.1px"
-                  variantOnLeft="60.2px"
-                  variantOnOpacity="0"
-                  divHeight="108.4%"
-                  divWidth="111.24%"
-                  divColor="#2b2b36"
-                />
-                <VariantOn
-                  prop="6"
-                  variantOnWidth="33.8px"
-                  variantOnPosition="absolute"
-                  variantOnTop="143.1px"
-                  variantOnLeft="115.6px"
-                  variantOnOpacity="0"
-                  divHeight="108.4%"
-                  divWidth="111.24%"
-                  divColor="#2b2b36"
-                />
-                <VariantOn
-                  prop="7"
-                  variantOnWidth="33.8px"
-                  variantOnPosition="absolute"
-                  variantOnTop="143.1px"
-                  variantOnLeft="171px"
-                  variantOnOpacity="0"
-                  divHeight="108.4%"
-                  divWidth="111.24%"
-                  divColor="#2b2b36"
-                />
-                <div className="days">
-                  <div className="div2">1</div>
-                </div>
-                <div className="days1">
-                  <div className="div2">2</div>
-                </div>
-                <div className="days2">
-                  <div className="div2">3</div>
-                </div>
-                <div className="days3">
-                  <div className="div2">4</div>
-                </div>
-                <div className="days4">
-                  <div className="div2">5</div>
-                </div>
-                <div className="days5">
-                  <div className="div2">6</div>
-                </div>
-                <div className="days6">
-                  <div className="div2">7</div>
-                </div>
-                <div className="days7">
-                  <div className="div2">8</div>
-                </div>
-                <div className="days8">
-                  <div className="div2">9</div>
-                </div>
-                <div className="days9">
-                  <div className="div2">10</div>
-                </div>
-                <div className="days10">
-                  <div className="div2">11</div>
-                </div>
-                <div className="days11">
-                  <div className="div2">12</div>
-                </div>
-                <div className="days12">
-                  <div className="div2">13</div>
-                </div>
-                <div className="days13">
-                  <div className="div15">14</div>
-                  <div className="days-child" />
-                  <div className="days-item" />
-                </div>
-                <div className="days14">
-                  <div className="div2">15</div>
-                </div>
-                <div className="days15">
-                  <div className="div2">16</div>
-                </div>
-                <div className="days16">
-                  <div className="div18">17</div>
-                </div>
-                <div className="days17">
-                  <div className="div2">18</div>
-                </div>
-                <div className="days18">
-                  <div className="div2">19</div>
-                </div>
-                <div className="days19">
-                  <div className="div2">20</div>
-                </div>
-                <div className="days20">
-                  <div className="div2">21</div>
-                </div>
-                <div className="days21">
-                  <div className="div2">22</div>
-                </div>
-                <div className="days22">
-                  <div className="div2">23</div>
-                </div>
-                <div className="days23">
-                  <div className="div2">24</div>
-                </div>
-                <div className="days24">
-                  <div className="div2">25</div>
-                </div>
-                <div className="days25">
-                  <div className="div2">26</div>
-                </div>
-                <div className="days26">
-                  <div className="div2">27</div>
-                </div>
-                <div className="days27">
-                  <div className="div2">28</div>
-                </div>
-                <div className="days28">
-                  <div className="div2">29</div>
-                </div>
-                <div className="days29">
-                  <div className="div2">30</div>
-                </div>
-                <div className="calendar-parent">
-                  <div className="calendar1">Calendar</div>
-                  <img className="icons" alt="" src="/icons2.svg" />
-                </div>
-              </div>
-              <div className="frame-parent3">
-                <div className="upcoming-parent">
-                  <b className="upcoming">Upcoming</b>
-                  <div className="view-all">View All</div>
-                </div>
-                <div className="frame-child10" />
-                <div className="rectangle-parent2">
-                  <div className="frame-child11" />
-                  <div className="frame-parent4">
-                    <div className="heading-heading-left-parent">
-                      <div className="heading-heading">
-                        Montly doctor’s meet
-                      </div>
-                      <div className="heading-heading1">
-                        8 April, 2021 | 04:00 PM
-                      </div>
-                    </div>
-                    <div className="frame-child12" />
-                    <b className="m">M</b>
-                  </div>
-                </div>
-              </div>
+              <Calendar
+                onChange={(date) => setSelectedDate(date)}
+                value={selectedDate}
+                showNavigation
+              />
+
+            <div className="today-info">
+              <p>Today is: {today}</p>
+            </div>
+            
             </div>
             <div className="hello-dr-kim">
               <div className="rectangle-parent3">
