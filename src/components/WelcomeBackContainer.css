@@ -8,11 +8,12 @@
 }
 .h33 {
   position: absolute;
-  top: 217px;
-  left: 82px;
+  top: 230px;
+  left: 80px;
   font-size: var(--h3-size);
   letter-spacing: 0.1px;
   line-height: 32px;
+  white-space: nowrap;
 }
 .email-letter3,
 .h34,
@@ -24,7 +25,7 @@
 }
 .h34 {
   top: 600px;
-  left: 133px;
+  left: 130px;
   cursor: pointer;
 }
 .email-letter3,

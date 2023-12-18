@@ -272,13 +272,19 @@
 }
 .buttonbtnprimary-color {
   align-self: stretch;
-  border-radius: var(--br-8xs);
-  background-color: #23a6f0;
+  border-radius: 8px; /* Adjust as needed */
+  background-color: #25b7c8; /* Updated color */
   overflow: hidden;
   align-items: center;
-  padding: var(--padding-mini) var(--padding-21xl);
-  color: var(--light-background-color);
+  padding: 10px 20px; /* Adjust padding */
+  color: #fff; /* Text color */
+  transition: background-color 0.3s;
 }
+
+.buttonbtnprimary-color:hover {
+  background-color: #007b8c; /* Hover color */
+}
+
 .buttonbtnprimary-color,
 .card-item,
 .col-md-4 {
@@ -286,6 +292,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .card-item {
   border-radius: var(--br-3xs);
   background-color: var(--light-background-color);
@@ -349,3 +356,60 @@
     align-self: auto;
   }
 }
+
+/* Add these styles to your HomePage.css or your preferred stylesheet */
+
+.card-item {
+  border: 0px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  margin-bottom: 1px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.selected-date {
+  margin-top: 5px;
+  color: #555;
+}
+
+/* Styling for the Date dropdown */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.buttonbtnprimary-color {
+  margin-top: 15px;
+}
+
+
+

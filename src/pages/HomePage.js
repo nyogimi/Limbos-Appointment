@@ -5,13 +5,13 @@ import 'react-datepicker/dist/react-datepicker.css';
 import ServiceSection from "../components/ServiceSection";
 import ContainerCard from "../components/ContainerCard";
 import ClientSection from "../components/ClientSection";
-import FormContainer from "../components/FormContainer";
 import Header from "../components/Header";
 import "./HomePage.css";
 
 const HomePage = () => {
   const navigate = useNavigate();
   const [selectedDate, setSelectedDate] = React.useState(null);
+  const [selectedTime, setSelectedTime] = React.useState(null);
 
   const onServicesTextClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='headingText']");
@@ -40,17 +40,13 @@ const HomePage = () => {
   }, [navigate]);
 
   const onBtnTextClick = useCallback(() => {
-    console.log("Selected Date:", selectedDate); // Use the selected date as needed
+    console.log("Selected Date:", selectedDate);
+    console.log("Selected Time:", selectedTime);
     navigate("/summary-page");
-  }, [selectedDate, navigate]);
+  }, [selectedDate, selectedTime, navigate]);
 
-  const locations = [
-    "Quezon City Clinic", 
-    "Manila Clinic", 
-    "St. Lukes Medical Center"
-  ];
   const services = [
-    "TMJ (Temporomandibular Joint) Orthodontics",
+    "TMJ (Temporomandibular Joint)",
     "Functional Jaw Orthopedics",
     "Prosthodontics",
     "Dental Cosmetics",
@@ -62,10 +58,10 @@ const HomePage = () => {
   const generateTimeOptions = () => {
     const startHour = 14; // 2:00 PM
     const endHour = 21; // 9:00 PM
-    const timeOptions = [];
+    const timeOptions = ["Please select time"]; // Initial placeholder option
 
     for (let hour = startHour; hour <= endHour; hour++) {
-      const formattedHour = hour % 12 || 12; // Convert 24-hour format to 12-hour format
+      const formattedHour = hour % 12 || 12;
       const amPm = hour < 12 ? 'AM' : 'PM';
       const timeString = `${formattedHour}:00 ${amPm}`;
       timeOptions.push(timeString);
@@ -102,8 +98,25 @@ const HomePage = () => {
               <div className="card-item">
                 <b className="h3">Book Appointment</b>
                 <div className="card-content">
-                  <FormContainer inputLabel="Location" options={locations} />
-                  <FormContainer inputLabel="Service" options={services} />
+                  <div className="form-container">
+                    <label className="form-label">Name</label>
+                    <input
+                      type="text"
+                      className="form-input"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div className="form-container">
+                    <label className="form-label">Service</label>
+                    <div className="form-input">
+                      {services.map((service, index) => (
+                        <div key={index} className="service-option">
+                          <input type="radio" name="service" value={service} />
+                          <label>{service}</label>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                   <div className="form-container">
                     <label className="form-label">Date</label>
                     <DatePicker
@@ -119,7 +132,20 @@ const HomePage = () => {
                       </p>
                     )}
                   </div>
-                  <FormContainer inputLabel="Time" options={times} />
+                  <div className="form-container">
+                    <label className="form-label">Time</label>
+                    <select
+                      className="form-input"
+                      value={selectedTime}
+                      onChange={(e) => setSelectedTime(e.target.value)}
+                    >
+                      {times.map((time, index) => (
+                        <option key={index} value={time}>
+                          {time}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
                 <div className="buttonbtnprimary-color">
                   <b className="btn-text" onClick={onBtnTextClick}>
